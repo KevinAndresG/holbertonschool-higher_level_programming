@@ -5,6 +5,8 @@ if __name__ == "__main__":
     count = 1
     if size == 1:
         print('0 arguments.')
+    elif size == 2:
+        print('{} argument:'.format(size - 1))
     else:
         print('{} arguments:'.format(size - 1))
     while count < size:
