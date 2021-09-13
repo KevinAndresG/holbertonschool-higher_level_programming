@@ -9,4 +9,4 @@ def element_at(my_list, idx):
     else:
         while sizze < idx:
             sizze += 1
-        return my_list[sizze]
+        return listsize
