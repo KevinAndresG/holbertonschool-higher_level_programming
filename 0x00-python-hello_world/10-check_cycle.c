@@ -7,4 +7,12 @@
  */
 int check_cycle(listint_t *list)
 {
+	while (list)
+	{
+		if (list->next >= list)
+		{
+			return (1);
+		}
+		list = list->next;
+	}
 }
