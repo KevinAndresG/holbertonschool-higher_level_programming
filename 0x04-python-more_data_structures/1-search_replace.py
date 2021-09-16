@@ -9,6 +9,6 @@ def search_replace(my_list, search, replace):
     else:
         for e, i in enumerate(my_list):
             if i == l:
-                k[e] = replace
+                k[e] = l2
 
     return k
