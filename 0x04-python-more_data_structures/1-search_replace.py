@@ -10,4 +10,5 @@ def search_replace(my_list, search, replace):
         for e, i in enumerate(my_list):
             if i == l:
                 k[e] = replace
-                return k
+
+    return k
