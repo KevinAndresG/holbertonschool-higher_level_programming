@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 def uniq_add(my_list=[]):
-    if my_list == None:
-        return None
-    my_list.sort()
-    sum = my_list[0]
+    s = set()
     size = len(my_list)
-    for i in range(0, size - 1):
-        if (my_list[i] != my_list[i+1]):
-            sum = sum + my_list[i+1]
-    return sum
+    sum = 0
+    for i in range(len(my_list)):
+        if my_list[i] not in s:
+            s.add(my_list[i])
+    for i in s:
+        sum = sum + i
+        return sum
