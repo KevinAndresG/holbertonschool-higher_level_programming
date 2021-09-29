@@ -5,6 +5,6 @@
 class Square:
     pass
 
-    def __init__(self, __size):
+    def __init__(self, size):
         """size of a Square"""
-        self.__size = __size
+        self.__size = size
