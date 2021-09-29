@@ -12,13 +12,12 @@ class Square:
     def my_print(self):
         """print a square"""
         r = 0
-        f = 0
         self.pr = self.__size
         if self.pr is 0:
             print('\n')
         else:
             for r in range(0, self.pr):
-                for f in range(0, self.pr):
+                for r in range(0, self.pr):
                     print('#', end="")
                 print('\n', end="")
 
