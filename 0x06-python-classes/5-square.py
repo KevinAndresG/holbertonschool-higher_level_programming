@@ -13,7 +13,7 @@ class Square:
         """print a square"""
         r = 0
         self.pr = self.__size
-        if self.pr is 0:
+        if self.pr == 0:
             print('\n')
         else:
             for r in range(0, self.pr):
