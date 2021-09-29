@@ -3,9 +3,8 @@
 
 
 class Square:
-    __size = None
+    pass
 
-    def __init__(self, size):
+    def __init__(self, __size):
         """size of a Square"""
-        if Square.__size is None:
-            self.__size = size
+        self.__size = __size
