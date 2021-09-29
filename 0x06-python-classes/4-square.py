@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""calculate the square of a number"""
+
+
 class Square:
     """calculate the square of a number"""
     @property
