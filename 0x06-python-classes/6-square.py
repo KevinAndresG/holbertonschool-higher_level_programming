@@ -15,24 +15,6 @@ class Square:
         """getter func"""
         return self.__size
 
-    def my_print(self):
-        '''This method print a squere in #'''
-        self.square = self.__size
-        if self.square == 0:
-            print()
-            return
-        for i in range(self.square):
-            for j in range(0, self.__position[0]):
-                print(" ", end="")
-            for j in range(self.__position[1]):
-                if self.__position[1] > 0:
-                    print("", end="")
-                # else:
-                #     print(" ", end="")
-            for i in range(self.square):
-                print("#", end="")
-            print()
-
     @size.setter
     def size(self, value):
         """setter func"""
@@ -61,3 +43,21 @@ class Square:
     def area(self):
         """take the square of a nimber"""
         return self.__size ** 2
+
+    def my_print(self):
+        '''This method print a squere in #'''
+        self.square = self.__size
+        if self.square == 0:
+            print()
+            return
+        for i in range(self.square):
+            for j in range(0, self.__position[0]):
+                print(" ", end="")
+            for j in range(self.__position[1]):
+                if self.__position[1] > 0:
+                    print("", end="")
+                # else:
+                #     print(" ", end="")
+            for i in range(self.square):
+                print("#", end="")
+            print()
