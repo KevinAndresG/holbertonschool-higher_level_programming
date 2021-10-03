@@ -54,8 +54,8 @@ class Square:
 
     def __init__(self, size=0, position=(0, 0)):
         """Square class"""
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     def area(self):
         """take the square of a nimber"""
