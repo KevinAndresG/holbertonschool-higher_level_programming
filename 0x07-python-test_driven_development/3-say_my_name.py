@@ -8,7 +8,8 @@ the last name must be a string
 
 def say_my_name(first_name, last_name=""):
     """
-    if the first name or lasdt name is != str raise an error
+    if the first name or lasdt name is != str
+    raise an error
     """
     if type(first_name) is not str:
         raise TypeError("first_name must be a string")
