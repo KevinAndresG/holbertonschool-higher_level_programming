@@ -1,0 +1,32 @@
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+>>> say_my_name(7, 6)
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+>>> say_my_name(None)
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+>>> say_my_name("John", 5)
+Traceback (most recent call last):
+...
+TypeError: last_name must be a string
+>>> say_my_name(6, "Conor")
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+>>> say_my_name("ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd", "Smith")
+My name is ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd Smith
+>>> say_my_name(John, "Conor")
+Traceback (most recent call last):
+...
+NameError: name 'John' is not defined
+>>> len(__import__('3-say_my_name').__doc__) >= 5
+True
+>>> len(__import__('3-say_my_name').say_my_name.__doc__) >= 3
+True
+>>> import os
+>>> os.popen('head -1 0-add_integer.py').read()
+'#!/usr/bin/python3\n'
+>>> os.popen('pycodestyle 0-add_integer.py').read()
+''
