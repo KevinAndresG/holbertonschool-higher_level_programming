@@ -96,16 +96,16 @@ Traceback (most recent call last):
 ...
 TypeError: text must be a string
 
->>> len(__import__('4-print_square').__doc__) >= 5
+>>> len(__import__('5-text_indentation').__doc__) >= 5
 True
 
->>> len(__import__('4-print_square').print_square.__doc__) >= 3
+>>> len(__import__('5-text_indentation').text_indentation.__doc__) >= 3
 True
 
 >>> import os
 
->>> os.popen('head -1 4-print_square.py').read()
+>>> os.popen('head -1 5-text_indentation.py').read()
 '#!/usr/bin/python3\n'
 
->>> os.popen('pycodestyle 4-print_square.py').read()
+>>> os.popen('pycodestyle 5-text_indentation.py').read()
 ''
