@@ -1,8 +1,17 @@
 >>> MyList = __import__('1-my_list').MyList
 >>> my_list = MyList()
->>> my_list.append("1")
->>> my_list.append(4)
+>>> my_list.append(5)
+>>> my_list.append(5)
 >>> my_list.append(2)
 >>> my_list.append(3)
 >>> my_list.append(5)
 >>> my_list.print_sorted()
+[2, 3, 5, 5, 5]
+>>> newlst = MyList()
+>>> newlst.append(5555)
+>>> newlst.print_sorted()
+[5555]
+>>> newlst2 = MyList()
+>>> newlst2.append('Hello')
+>>> newlst2.print_sorted()
+['Hello']
