@@ -15,3 +15,8 @@
 >>> newlst2.append('Hello')
 >>> newlst2.print_sorted()
 ['Hello']
+>>> newlst3 = MyList()
+>>> newlst3.append(4.5)
+>>> newlst3.append(1.5)
+>>> newlst3.print_sorted()
+[1.5, 4.5]
