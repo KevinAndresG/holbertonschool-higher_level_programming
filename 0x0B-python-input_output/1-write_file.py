@@ -12,5 +12,4 @@ def write_file(filename="", text=""):
     """
     """if not filename:"""
     with open(filename, 'w') as f:
-        h = f.write(text)
-    return h
+    	return f.write(text)
