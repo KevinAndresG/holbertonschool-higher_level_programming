@@ -3,6 +3,7 @@
 
 
 class Base():
+    """receive an item"""
 
     __nb_objects = 0
 
