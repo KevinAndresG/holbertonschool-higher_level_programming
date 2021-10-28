@@ -1,11 +1,18 @@
 #!/usr/bin/python3
 """
-
+here just going to create
+the getter and setter
+to moodify it
 """
 from models.base import Base
-
+"""
+import the super class
+"""
 
 class Rectangle(Base):
+    """
+    a clas to make a rectangle
+    """
     def __init__(self, width, height, x=0, y=0, id=None):
         self.__width = width
         self.__height = height
@@ -43,7 +50,7 @@ class Rectangle(Base):
 
     @property
     def x(self):
-        '''getter to retrieve the width'''
+        '''getter to retrieve the x'''
         return self.__x
 
     @x.setter
@@ -57,7 +64,7 @@ class Rectangle(Base):
 
     @property
     def y(self):
-        '''getter to retrieve the width'''
+        '''getter to retrieve the y'''
         return self.__y
 
     @y.setter
