@@ -9,6 +9,7 @@ from models.base import Base
 import the super class
 """
 
+
 class Rectangle(Base):
     """
     a clas to make a rectangle
