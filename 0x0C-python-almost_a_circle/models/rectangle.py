@@ -114,3 +114,17 @@ class Rectangle(Base):
         """ void str """
         return(f"[Rectangle] \
 ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}")
+
+    def update(self, *args):
+        """adding arguments to each attribute"""
+        for j in range(len(args)):
+            if j == 0:
+                self.id = args[j]
+            if j == 1:
+                self.__width = args[j]
+            if j == 2:
+                self.__height = args[j]
+            if j == 3:
+                self.__x = args[j]
+            if j == 4:
+                self.__y = args[j]
