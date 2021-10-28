@@ -12,7 +12,7 @@ importing the class to inherit
 
 class Square(Rectangle):
     """
-	a class to print a square
+        a class to print a square
     """
 
     def __init__(self, size, x=0, y=0, id=None):
