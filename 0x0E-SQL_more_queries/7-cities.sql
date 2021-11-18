@@ -1,6 +1,7 @@
 -- create database and table id auto and another things
 -- in MySQL server
 CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;
+USE hbtn_0d_usa
 CREATE TABLE IF NOT EXISTS cities
 (
 	id INT UNIQUE AUTO_INCREMENT NOT NULL,
@@ -9,3 +10,4 @@ CREATE TABLE IF NOT EXISTS cities
 	PRIMARY KEY(id),
 	FOREIGN KEY (state_id) REFERENCES states(id)
 );
+type=InnoDB;
