@@ -10,4 +10,3 @@ CREATE TABLE IF NOT EXISTS cities
 	PRIMARY KEY(id),
 	FOREIGN KEY (state_id) REFERENCES states(id)
 );
-type=InnoDB;
