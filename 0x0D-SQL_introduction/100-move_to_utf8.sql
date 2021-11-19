@@ -2,5 +2,5 @@
 -- in MySQL server
 USE hbtn_0c_0;
 ALTER DATABASE hbtn_0c_0 COLLATE utf8mb4_unicode_ci CHARACTER SET utf8mb4;
-ALTER TABLE first_table CHARACTER SET utf8 COLLATE utf8_general_ci;
+ALTER TABLE first_table COLLATE utf8_general_ci CHARACTER SET utf8;
 ALTER TABLE first_table MODIFY name VARCHAR(256) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
