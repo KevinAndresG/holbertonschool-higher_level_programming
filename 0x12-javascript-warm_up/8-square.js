@@ -7,10 +7,10 @@ if (!parseInt(args.argv[2])) {
   console.log('Missing size');
 } else {
   for (x = 0; x < parseInt(args.argv[2]); x++) {
-    let square = ''
+    let square = '';
     for (y = 0; y < parseInt(args.argv[2]); y++) {
-      square+='X'
+      square += 'X';
     }
-    console.log(square+" ");
+    console.log(square + ' ');
   }
 }
