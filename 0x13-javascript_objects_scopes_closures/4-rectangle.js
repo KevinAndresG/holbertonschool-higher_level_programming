@@ -23,26 +23,13 @@ module.exports = class Rectangle {
   }
 
   rotate () {
-    let x;
-    let y;
-    for (y = 0; y < this.width; y++) {
-      let rect = '';
-      for (x = 0; x < this.height; x++) {
-        rect += 'X';
-      }
-      console.log(rect);
-    }
+   let temp = this.width;
+   this.width = this.height;
+   this.height = temp;
   }
 
   double () {
-    let x;
-    let y;
-    for (x = 0; x < (this.height * 2); x++) {
-      let rect = '';
-      for (y = 0; y < (this.width * 2); y++) {
-        rect += 'X';
-      }
-      console.log(rect);
-    }
+    this.width *= 2;
+    this.height *= 2;
   }
 };
