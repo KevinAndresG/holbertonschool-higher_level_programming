@@ -37,11 +37,9 @@ module.exports = class Rectangle {
   double () {
     let x;
     let y;
-    this.height *= 2;
-    this.width *= 2;
-    for (x = 0; x < (this.height); x++) {
+    for (x = 0; x < (this.height * 2); x++) {
       let rect = '';
-      for (y = 0; y < (this.width); y++) {
+      for (y = 0; y < (this.width * 2); y++) {
         rect += 'X';
       }
       console.log(rect);
