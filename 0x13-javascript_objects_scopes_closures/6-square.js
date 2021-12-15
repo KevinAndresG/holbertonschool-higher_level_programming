@@ -7,25 +7,25 @@ module.exports = class Square extends Rectangle {
 
   charPrint (c) {
     if (c) {
-        let x;
-        let y;
-        for (x = 0; x < this.height; x++) {
-          let rect = '';
-          for (y = 0; y < this.width; y++) {
-            rect += c;
-          }
-          console.log(rect);
+      let x;
+      let y;
+      for (x = 0; x < this.height; x++) {
+        let rect = '';
+        for (y = 0; y < this.width; y++) {
+          rect += c;
         }
+        console.log(rect);
+      }
     } else {
       let x;
-        let y;
-        for (x = 0; x < this.height; x++) {
-          let rect = '';
-          for (y = 0; y < this.width; y++) {
-            rect += 'X';
-          }
-          console.log(rect);
+      let y;
+      for (x = 0; x < this.height; x++) {
+        let rect = '';
+        for (y = 0; y < this.width; y++) {
+          rect += 'X';
         }
+        console.log(rect);
+      }
     }
   }
 };
