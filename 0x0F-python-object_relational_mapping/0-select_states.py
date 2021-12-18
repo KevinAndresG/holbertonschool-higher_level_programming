@@ -1,17 +1,18 @@
 #!/usr/bin/python3
-""" 
-    list all the data
-    from a SQL database
+"""list all states from database hbtn_0e_0_usa
 """
 if __name__ == "__main__":
-    import MySQLdb
     import sys
-    db = MySQLdb.connect(host = 'localhost', user=sys.argv[1],
-                         passwd=sys.argv[2], db=sys.argv[3])
-    cursor = db.cursor()
+    import MySQLdb
 
-    cursor.execute("SELECT * FROM states ORDER BY states.id ASC")
-    for n in cursor:
-        all = str(n)
-        print("%s " % all)
+    db = MySQLdb.connect(host="localhost", user=sys.argv[1],
+                         passwd=sys.argv[2], database=sys.argv[3])
+
+    curs = db.cursor()
+
+    curs.execute("SELECT * FROM states ORDER BY id ASC")
+    for x in curs:
+        data = str(x)
+        print("%s " % data)
+
     db.close()
