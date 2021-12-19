@@ -11,6 +11,6 @@ if (!parseInt(args.argv[2])) {
     for (y = 0; y < parseInt(args.argv[2]); y++) {
       square += 'X';
     }
-    console.log(square + ' ');
+    console.log(square);
   }
 }
