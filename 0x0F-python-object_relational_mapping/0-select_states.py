@@ -12,7 +12,7 @@ if __name__ == "__main__":
 
     curs.execute("SELECT * FROM states ORDER BY id ASC")
     all = curs.fetchall()
-    for a in all:
-        print(a)
+    for m in all:
+        print(m)
 
     db.close()
