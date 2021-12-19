@@ -12,7 +12,7 @@ if __name__ == "__main__":
 
     curs = db.cursor()
 
-    curs.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
+    curs.execute("SELECT*FROM states WHERE name REGEXP '^[N]' ORDER BY id ASC")
     justN = curs.fetchall()
     for n in justN:
         print(n)
