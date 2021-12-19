@@ -11,8 +11,8 @@ if __name__ == "__main__":
     curs = db.cursor()
 
     curs.execute("SELECT * FROM states ORDER BY id ASC")
-    for x in curs:
-        data = str(x)
-        print("%s " % data)
+    all = curs.fetchall()
+    for a in all:
+        print(a)
 
     db.close()
