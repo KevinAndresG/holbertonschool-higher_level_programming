@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-	list all states
-	that start with N
+    list all states
+    that start with N
 """
 if __name__ == "__main__":
     import sys
@@ -12,7 +12,8 @@ if __name__ == "__main__":
 
     curs = db.cursor()
 
-    curs.execute("SELECT * FROM states WHERE REGEXP_LIKE(UPPER(name), '^[N]') ORDER BY id ASC")
+    curs.execute("""SELECT id, name FROM states
+                WHERE Name LIKE BINARY 'N%' ORDER BY id ASC""")
     justN = curs.fetchall()
     for n in justN:
         print(n)
