@@ -11,4 +11,5 @@ if __name__ == "__main__":
     data = data.encode("ascii")  # turn data in bytes
     req = urllib.request.Request(url, data)
     with urllib.request.urlopen(req) as response:
-        print(response.decode("utf8"))
+
+        print(response.read().decode("utf8"))
