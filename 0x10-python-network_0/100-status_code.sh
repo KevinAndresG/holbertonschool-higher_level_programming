@@ -1,3 +1,3 @@
 #!/bin/bash
 # pint the status code
-curl -L -I -s -o /dev/null $1 -w '%{http_code}\n'
+curl --write-out %{http_code} -s --no-keepalive --output /dev/null  $1
