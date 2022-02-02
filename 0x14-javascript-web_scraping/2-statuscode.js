@@ -1,9 +1,9 @@
 #!/usr/bin/node
 
 const { argv } = require('process');
-const https = require('https');
+const { request } = require('http');
 
-const response = https.get(argv[2], res => {
+const response = request.get(argv[2], res => {
   console.log('Code: ' + res.statusCode);
 });
 response.end();
