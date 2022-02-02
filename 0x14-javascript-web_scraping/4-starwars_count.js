@@ -10,10 +10,8 @@ request(url, function (err, res, body) {
   }
   const bod = JSON.parse(body);
   let cnt = 0;
-  for (let i = 0; i < bod.results.length; i++) {
-    let j = 0;
-    const len = bod.results[i].characters.length;
-    while (j < len) {
+  for (const i in bod.results) {
+    for (let j in bod.results[i].characters) {
       if (bod.results[i].characters[j] === 'https://swapi-api.hbtn.io/api/people/18/') {
         cnt++;
       }
