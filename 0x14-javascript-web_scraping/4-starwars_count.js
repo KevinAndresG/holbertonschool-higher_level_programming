@@ -10,7 +10,7 @@ request(url, function (err, res, body) {
   }
   const bod = JSON.parse(body);
   let cnt = 0;
-  for (let i = 0; i < bod.count; i++) {
+  for (let i = 0; i < bod.results.length; i++) {
     let j = 0;
     const len = bod.results[i].characters.length;
     while (j < len) {
