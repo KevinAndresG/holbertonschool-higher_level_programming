@@ -3,11 +3,7 @@
 const { argv } = require('process');
 const https = require('https');
 
-const option = {
-  method : "GET"
-}
-
-const response = https.request(argv[2], option, res => {
-  console.log('Code: ' + res.statusCode);
+const response = https.request(argv[2], res => {
+  console.log('code: ' + res.statusCode);
 });
 response.end();
