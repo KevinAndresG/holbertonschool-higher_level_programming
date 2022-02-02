@@ -12,11 +12,9 @@ request(url, function (err, res, body) {
   let cnt = 0;
   for (let i = 0; i < bod.count; i++) {
     let j = 0;
-    const len = bod.results[i].characters.length;
-    while (j < len) {
-      if (bod.results[i].characters[j] === 'https://swapi-api.hbtn.io/api/people/18/') {
+    while (j < bod.results[i].characters.length) {
+      if (bod.results[i].characters[j] === 'https://swapi-api.hbtn.io/api/people/56/') {
         cnt++;
-        j++;
       }
       j++;
     }
