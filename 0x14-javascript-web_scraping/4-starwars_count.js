@@ -2,8 +2,9 @@
 
 const { argv } = require('process');
 const request = require('request');
+const url = argv[2];
 
-request(argv[2], function (err, res, body) {
+request(url, function (err, res, body) {
   if (err) {
     console.log(err);
   }
@@ -15,6 +16,7 @@ request(argv[2], function (err, res, body) {
     while (j < len) {
       if (bod.results[i].characters[j] === 'https://swapi-api.hbtn.io/api/people/18/') {
         cnt++;
+        j++;
       }
       j++;
     }
