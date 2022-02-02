@@ -8,6 +8,6 @@ fs.readFile(argv[2], 'utf8', function (err, data) {
   if (data) {
     console.log(data);
   } else {
-    console.log(err);
+    console.error(err);
   }
 });
