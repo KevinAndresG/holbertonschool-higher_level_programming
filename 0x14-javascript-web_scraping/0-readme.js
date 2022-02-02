@@ -3,9 +3,10 @@
 const { argv } = require('process');
 const fs = require('fs');
 
+/* Read File */
 fs.readFile(argv[2], 'utf8', function (err, data) {
-  if (err) {
-    return console.log(err);
+  if (data) {
+    console.log(data);
   }
-  console.log(data);
+  console.log(err);
 });
